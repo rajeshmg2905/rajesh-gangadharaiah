@@ -18,131 +18,148 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="mark" href="#top">RG</a>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="btn" href="rajesh-gangadharaiah-resume.pdf" download>Resume</a>
+      <div class="wrap header-inner">
+        <a class="mark" href="#top">RG</a>
+        <nav aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn" href="rajesh-gangadharaiah-resume.pdf" download>Resume</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <p class="eyebrow">Bangalore · Senior Consultant</p>
-        <h1>Rajesh Gangadharaiah</h1>
-        <p class="lede">
-          Data engineering and cloud architect. I design platforms that move
-          enterprise data reliably — batch and real-time — with governance,
-          quality, and a clear path to analytics and AI.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:rajesh.gangadharaiah@gmail.com">Email</a>
-          <a
-            class="btn"
-            href="https://www.linkedin.com/in/rajesh-gangadharaiah-46230757"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Bangalore · Senior Consultant</p>
+          <h1>Rajesh Gangadharaiah</h1>
+          <p class="lede">
+            Data engineering and cloud architect. I design platforms that move
+            enterprise data reliably — batch and real-time — with governance,
+            quality, and a clear path to analytics and AI.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:rajesh.gangadharaiah@gmail.com">Email</a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/rajesh-gangadharaiah-46230757"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <figure class="portrait">
+          <img
+            src="portrait.jpg"
+            alt="Portrait of Rajesh Gangadharaiah"
+            width="420"
+            height="420"
+          />
+        </figure>
+      </section>
+
+      <section id="about" class="section wrap">
+        <h2>About</h2>
+        <div class="about-grid">
+          <p>
+            Fourteen years in software and data platforms, including eleven
+            building scalable data architecture across payments, retail, supply
+            chain, and aviation. Recent work includes enterprise reporting on
+            Hadoop and PySpark at Visa, a unified cloud data foundation at H&amp;M,
+            and demand-forecasting architecture on AWS at Nike.
+          </p>
+          <p>
+            I lead delivery with product, architecture, DevOps, and analytics
+            partners — mentoring engineers, setting technical direction, and
+            shipping systems that hold up in production.
+          </p>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <h2>About</h2>
-        <p>
-          Fourteen years in software and data platforms, including eleven
-          building scalable data architecture across payments, retail, supply
-          chain, and aviation. Recent work includes enterprise reporting on
-          Hadoop and PySpark at Visa, a unified cloud data foundation at H&amp;M,
-          and demand-forecasting architecture on AWS at Nike.
-        </p>
-        <p>
-          I lead delivery with product, architecture, DevOps, and analytics
-          partners — mentoring engineers, setting technical direction, and
-          shipping systems that hold up in production.
-        </p>
-      </section>
-
-      <section id="experience" class="section">
+      <section id="experience" class="section wrap">
         <h2>Experience</h2>
         <ol class="timeline">
           <li>
-            <div class="when">Apr 2025 — Present</div>
-            <div class="what">
-              <h3>Visa <span>Senior Consultant, Data Engineering</span></h3>
-              <ul>
-                <li>
-                  Architected an enterprise reporting platform on Hadoop,
-                  PySpark, SQL, and Airflow with governance and quality
-                  controls across payment domains.
-                </li>
-                <li>
-                  Delivered event-driven ingestion, data-quality monitoring, and
-                  an AI analytics agent using business semantics and RAG over
-                  KPI metrics.
-                </li>
-              </ul>
+            <div class="when">Apr 2025 – Present</div>
+            <div class="role">
+              <h3>Visa</h3>
+              <p class="title">Senior Consultant, Data Engineering</p>
             </div>
+            <ul>
+              <li>
+                Architected an enterprise reporting platform on Hadoop, PySpark,
+                SQL, and Airflow with governance and quality controls across
+                payment domains.
+              </li>
+              <li>
+                Delivered event-driven ingestion, data-quality monitoring, and
+                an AI analytics agent using business semantics and RAG over KPI
+                metrics.
+              </li>
+            </ul>
           </li>
           <li>
-            <div class="when">Jun 2022 — Apr 2025</div>
-            <div class="what">
-              <h3>H&amp;M <span>Senior Data Engineer, Data Architect</span></h3>
-              <ul>
-                <li>
-                  Unified 10+ enterprise platforms into one cloud data
-                  foundation — batch and real-time pipelines, governed access,
-                  and shared capabilities.
-                </li>
-                <li>
-                  Cut Airflow processing time ~60% on Cloud Composer and
-                  reduced Databricks validation effort ~85% with an automation
-                  framework; provisioned GCP with Terraform.
-                </li>
-              </ul>
+            <div class="when">Jun 2022 – Apr 2025</div>
+            <div class="role">
+              <h3>H&amp;M</h3>
+              <p class="title">Senior Data Engineer, Data Architect</p>
             </div>
+            <ul>
+              <li>
+                Unified 10+ enterprise platforms into one cloud data foundation
+                — batch and real-time pipelines, governed access, and shared
+                capabilities.
+              </li>
+              <li>
+                Cut Airflow processing time ~60% on Cloud Composer and reduced
+                Databricks validation effort ~85% with an automation framework;
+                provisioned GCP with Terraform.
+              </li>
+            </ul>
           </li>
           <li>
-            <div class="when">Feb 2021 — Jun 2022</div>
-            <div class="what">
-              <h3>Nike <span>Senior Data Engineer</span></h3>
-              <ul>
-                <li>
-                  Optimized demand-forecasting architecture on AWS with dbt and
-                  Snowflake, lowering compute cost and runtime.
-                </li>
-                <li>
-                  Automated EC2, S3, and EMR provisioning with Terraform,
-                  reducing deployment time ~60%, and mentored data and DevOps
-                  engineers.
-                </li>
-              </ul>
+            <div class="when">Feb 2021 – Jun 2022</div>
+            <div class="role">
+              <h3>Nike</h3>
+              <p class="title">Senior Data Engineer</p>
             </div>
+            <ul>
+              <li>
+                Optimized demand-forecasting architecture on AWS with dbt and
+                Snowflake, lowering compute cost and runtime.
+              </li>
+              <li>
+                Automated EC2, S3, and EMR provisioning with Terraform, reducing
+                deployment time ~60%, and mentored data and DevOps engineers.
+              </li>
+            </ul>
           </li>
           <li>
-            <div class="when">Aug 2011 — Jan 2021</div>
-            <div class="what">
-              <h3>Unisys &amp; Accenture <span>Senior Software Engineer</span></h3>
-              <ul>
-                <li>
-                  Owned Kafka streaming for millions of passenger and shipment
-                  events daily; built batch and streaming platforms on Spark,
-                  Databricks, and Azure.
-                </li>
-                <li>
-                  Delivered Flask APIs, Azure Data Factory / Synapse workflows,
-                  and Grafana monitoring that identified roughly $100K in
-                  quarterly infrastructure savings.
-                </li>
-              </ul>
+            <div class="when">Aug 2011 – Jan 2021</div>
+            <div class="role">
+              <h3>Unisys &amp; Accenture</h3>
+              <p class="title">Senior Software Engineer</p>
             </div>
+            <ul>
+              <li>
+                Owned Kafka streaming for millions of passenger and shipment
+                events daily; built batch and streaming platforms on Spark,
+                Databricks, and Azure.
+              </li>
+              <li>
+                Delivered Flask APIs, Azure Data Factory / Synapse workflows,
+                and Grafana monitoring that identified roughly $100K in
+                quarterly infrastructure savings.
+              </li>
+            </ul>
           </li>
         </ol>
       </section>
 
-      <section id="expertise" class="section">
+      <section id="expertise" class="section wrap">
         <h2>Expertise</h2>
         <div class="grid">
           <article>
@@ -177,28 +194,32 @@
         </p>
       </section>
 
-      <section id="contact" class="section contact">
+      <section id="contact" class="section wrap contact">
         <h2>Contact</h2>
-        <p>Based in Bangalore. Open to conversations about data platforms and architecture.</p>
-        <ul class="contact-list">
-          <li>
-            <a href="mailto:rajesh.gangadharaiah@gmail.com">rajesh.gangadharaiah@gmail.com</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/rajesh-gangadharaiah-46230757"
-              target="_blank"
-              rel="noopener noreferrer"
-              >linkedin.com/in/rajesh-gangadharaiah-46230757</a
-            >
-          </li>
-        </ul>
+        <div class="contact-row">
+          <p>Based in Bangalore. Open to conversations about data platforms and architecture.</p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:rajesh.gangadharaiah@gmail.com">rajesh.gangadharaiah@gmail.com</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rajesh-gangadharaiah-46230757"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com/in/rajesh-gangadharaiah-46230757</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Rajesh Gangadharaiah</p>
-      <p>B.E., B.M.S. College of Engineering</p>
+      <div class="wrap footer-inner">
+        <p>© <span id="year"></span> Rajesh Gangadharaiah</p>
+        <p>B.E., B.M.S. College of Engineering</p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
