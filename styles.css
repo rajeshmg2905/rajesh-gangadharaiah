@@ -1,0 +1,277 @@
+:root {
+  --bg: #f4efe6;
+  --ink: #1c1915;
+  --muted: #5c564e;
+  --line: #d9d0c3;
+  --accent: #6b3a2a;
+  --paper: #faf7f1;
+  --max: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.85rem 6vw;
+  background: rgba(244, 239, 230, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.mark {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-left: auto;
+  font-size: 0.92rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--ink);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.btn:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--paper);
+}
+
+main {
+  padding: 0 6vw 4rem;
+}
+
+.hero {
+  max-width: 46rem;
+  padding: 4.5rem 0 3rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 480;
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.4rem, 6vw, 4.1rem);
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.65rem;
+}
+
+h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+}
+
+.lede {
+  margin: 0 0 1.75rem;
+  max-width: 36rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  max-width: var(--max);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.section p {
+  margin: 0 0 1rem;
+  color: #3a352e;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 1.25rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.timeline li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.when {
+  font-size: 0.88rem;
+  color: var(--muted);
+  padding-top: 0.3rem;
+}
+
+.what h3 span {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.what ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: #3a352e;
+}
+
+.what li + li {
+  margin-top: 0.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.75rem;
+}
+
+.grid article {
+  padding: 0;
+}
+
+.grid p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.domains {
+  margin-top: 1.75rem !important;
+  font-size: 0.95rem;
+  color: var(--muted) !important;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.contact-list li + li {
+  margin-top: 0.35rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 6vw 2.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .site-header nav {
+    display: none;
+  }
+
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+}
